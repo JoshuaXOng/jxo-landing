@@ -10,7 +10,7 @@
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "Node",
-    "esModuleInterop": true, // Seems to be overlooked by CLI command tsc (using npx).
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true
   }

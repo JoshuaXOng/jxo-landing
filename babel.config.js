@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = environmentVariables => {
   if (environmentVariables.env('test')) {
     return {
