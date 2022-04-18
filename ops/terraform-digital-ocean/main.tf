@@ -19,7 +19,7 @@ resource "digitalocean_app" "jxo-landing" {
     static_site {
       name          = "jxo-landing-static"
       build_command = "npm run build"
-      output_dir    = "/dist/"
+      output_dir    = "/dist"
       git {
         repo_clone_url = "https://github.com/JoshuaXOng/jxo-landing.git"
         branch         = "main"
