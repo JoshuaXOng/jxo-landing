@@ -1,13 +1,5 @@
-/**
- * React Router fix: output.publicPath and devServer.historyApiFallback.
- * Issue of client side routing.
- * URL: https://ui.dev/react-router-cannot-get-url-refresh/
- */
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-
 
 module.exports = {
     mode: 'production',
@@ -59,4 +51,3 @@ module.exports = {
         })
     ]
 }
-
