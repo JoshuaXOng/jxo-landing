@@ -1,7 +1,7 @@
 {
-  "name": "jxo-landing",
+  "name": "jxo-test",
   "version": "1.0.0",
-  "description": "Personal landing page.",
+  "description": "A project for experimenting.",
   "main": "./src/pages/scripts/index.js",
   "scripts": {
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",

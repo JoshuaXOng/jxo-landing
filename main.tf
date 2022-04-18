@@ -1,3 +1,3 @@
-module "digital-ocean-racing-odds-scraper" {
+module "digital-ocean-jxo-landing" {
   source = "./ops/terraform-digital-ocean"
 }

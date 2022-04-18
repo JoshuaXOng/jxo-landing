@@ -1,3 +1,3 @@
-# jxo-landing
+# jxo-components
 
-Personal landing page.
+Just messing around with stuff...

@@ -1,0 +1,7 @@
+variable "billing_account_id" {
+  default =
+}
+
+variable "credentials_file" {
+  default = 
+}
