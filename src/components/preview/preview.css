@@ -1,0 +1,34 @@
+.jxo-preview-container {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    width: 50%;
+    max-width: 15rem;
+    background-color: grey;
+    padding: 1rem;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .jxo-preview-container {
+        display: none;
+        align-items: center;
+        width: 80%;
+        max-width: 80%;
+        background-color: grey;
+    }
+} */
+
+.jxo-preview {
+    transition: width 0.4s;
+    transition-timing-function: ease;
+    width: 50%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .jxo-preview:nth-child(-n+2) {
+        transition: width 0.4s;
+        transition-timing-function: ease;
+        width: 0rem;
+    }
+}

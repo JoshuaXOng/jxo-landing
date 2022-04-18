@@ -1,0 +1,90 @@
+:root {
+    --border-radius: 0.4rem; 
+    --icon2-padding: 0.4rem;
+    --icon2-size: 16px;
+}
+
+.jxo-searchbar-container {
+    z-index: 0;
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+@media only screen and (max-width: 600px) {
+    .jxo-searchbar-container {
+        width: calc(var(--icon2-size) + 2*var(--icon2-padding));
+    }
+}
+
+.jxo-searchbar {
+    z-index: -1000;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: calc(100% - var(--icon2-size) - 2*var(--icon2-padding));
+    height: 100%;
+    padding: 0rem 0rem 0rem 1.5rem;
+    outline: none;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: var(--border-radius) 0rem 0rem var(--border-radius);
+}
+
+.jxo-searchbar::placeholder {
+    color: black;
+}
+
+.jxo-searchbar:hover {
+    transition: 0.4s;
+    border-color: grey;
+}
+
+.jxo-searchbar:focus {
+    border-color: rgb(0, 105, 237);
+}
+
+@media only screen and (max-width: 600px) {
+    .jxo-searchbar {
+        transform: translateY(2rem);
+        width: 8rem;
+        padding: 0.4rem;
+        border-radius: var(--border-radius);
+    }
+}
+
+.jxo-searchbar-icon1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.4rem;
+    height: 100%;
+}
+
+.jxo-searchbar-icon2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0rem;
+    height: 100%;
+    padding: 0rem var(--icon2-padding) 0rem var(--icon2-padding);
+    border-radius: 0rem var(--border-radius) var(--border-radius) 0rem;
+}
+
+.jxo-searchbar-icon2:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: lightgrey;
+}
+
+.jxo-searchbar-icon2:active {
+    background-color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    .jxo-searchbar-icon2 {
+        display: none;
+    }
+}

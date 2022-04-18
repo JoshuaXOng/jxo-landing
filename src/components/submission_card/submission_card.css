@@ -1,0 +1,77 @@
+.jxo__card {
+    display: grid;
+    grid-template-areas:
+        'I'
+        'M'
+        'C';
+    grid-template-rows: repeat(3, 33.3%);
+    row-gap: 0.5rem;
+    justify-items: center;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding-bottom: 1rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.6rem;
+    box-shadow: 
+        -1rem 1rem 1rem red,
+        1rem 1rem 1rem blue;
+    filter: drop-shadow(0rem -3rem 1rem grey);
+    overflow: hidden;
+}
+
+.jxo__card:before {
+    content: '';
+    z-index: 1000;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 0rem;
+    height: 0rem;
+    border-width: 1.2rem 1.2rem 1.2rem 1.2rem;
+    border-style: solid;
+    border-color: 
+        rgba(255,255,255,0) 
+        rgba(255,255,255,1) 
+        rgba(255,255,255,0) 
+        rgba(255,255,255,1);
+}
+
+.jxo__card__image-container {
+    grid-area: I;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.jxo__card__main-container {
+    grid-area: M;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 200px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.jxo__card__main-container__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.jxo__card__controls-container {
+    grid-area: C;
+}
+
+/* @media screen and (min-width: 992px) {
+    .jxo__card {
+        grid-template-areas: 
+            'I M B';
+        align-items: center;
+        column-gap: 0.5rem;
+        padding: 0rem 0.5rem 0rem 0rem;
+    }
+} */

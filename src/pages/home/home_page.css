@@ -1,0 +1,135 @@
+.home-page {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#page-tint--activated {
+  z-index: -1000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  filter: opacity(0.6);
+}
+
+.home-page__header {
+  z-index: -1000;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    '. . . . .'
+    '. I . . .'
+    '. I T T .'
+    '. I A A .'
+    '. I . . .'
+    '. . . . .'
+    '. . . . .';
+  width: 100%;
+  height: 35rem;
+  background: linear-gradient(145deg, var(--primary-blue-700), var(--primary-blue-500));
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page__header {
+    grid-template-areas:
+      '. . . . .'
+      'I I . . .'
+      'I I T T T'
+      'I I A A A'
+      'I I . . .'
+      '. . . . .'
+      '. . . . .';
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-page__header {
+    grid-template-columns: repeat(3, 16%) 4% repeat(3, 16%);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+      '. . . . . . .'
+      '. . . . . . .'
+      '. . I . T . .'
+      '. . I . A . .'
+      '. . . . . . .'
+      '. . . . . . .'
+      '. . . . . . .';
+  }
+}
+
+.home-page__header__image {
+  grid-area: I;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-width: 20rem;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-page__header__image {
+    min-width: 10rem;
+  }
+}
+
+.home-page__header__image > img {
+  position: relative;
+  width: 100%;
+}
+
+.home-page__header__title {
+  grid-area: T;
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.home-page__header__additional {
+  color: white;
+  grid-area: A;
+}
+
+.custom-shape-divider-bottom-1632882764 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1632882764 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 211px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1632882764 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.home-page > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  height: auto;
+  min-height: 20rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin: auto;
+}
+

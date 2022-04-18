@@ -1,0 +1,39 @@
+.login-page {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 3rem);
+}
+
+.login-page__authentication-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.login-page__authentication-panel__login-card-container {
+    width: 20rem;
+    height: 20rem;
+}
+
+.login-page__authentication-panel__register-card-container {
+    width: 20rem;
+    height: 20rem;
+}
+
+.login-page__authentication-panel__login-card-container__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.login-page__authentication-panel__register-card-container__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}

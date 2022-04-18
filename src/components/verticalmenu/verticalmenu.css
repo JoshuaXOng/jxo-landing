@@ -1,0 +1,8 @@
+.jxo-vertical-menu {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: grey;
+    border-radius: 0.2rem;
+}
