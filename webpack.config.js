@@ -30,11 +30,6 @@ module.exports = {
         use: ["style-loader", "css-loader"] 
       },
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        loader: "ts-loader"
-      },
-      {
         test: /\.(jpe?g|png|gif)$/i,
         use: [
           {
