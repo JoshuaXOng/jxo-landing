@@ -7,8 +7,7 @@ module.exports = {
   mode: "production",
   entry: {
     index: "./src/pages/index.tsx"
-  },
-  devtool: "source-map",
+  }, // devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
