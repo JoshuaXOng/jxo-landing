@@ -4,7 +4,7 @@
   ],
   "compilerOptions": {
     "outDir": "./out/",
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "module": "CommonJS",
     "target": "es5",
     "jsx": "react",

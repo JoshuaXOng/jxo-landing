@@ -66,12 +66,14 @@
 @keyframes navbar-popout-flip {
     0% {
         transform: rotateY(0deg);
+        transform: scale(1);
     }
     25% {
         transform: rotateY(90deg);
     }
     50% {
         transform: rotateY(180deg);
+        transform: scale(0.95);
     }
     75% {
         transform: rotateY(270deg);

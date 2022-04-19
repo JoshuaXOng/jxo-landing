@@ -1,24 +1,27 @@
 import React from "react";
 import "./button.css";
 
-function Button (props: any) {
-	const size: { width: string; height: string } = props.size;
-	const bColor: string = props.bColor;
-	const tColor: string = props.tColor;
-	const onClick: () => void = props.onClick;
+type ButtonProps = {
+	children: string;
+	size: { width: string; height: string };
+	backgroundColor?: string;
+	textColor?: string;
+	onClick?: () => void;
+}
+
+export function Button (props: ButtonProps) {
+	const { size, backgroundColor, textColor, onClick } = props;
 
 	const buttonStyle = {
 		width: size ? size.width : undefined,
 		height: size ? size.height : undefined,
-		backgroudColor: bColor,
-		color: tColor
+		backgroudColor: backgroundColor,
+		color: textColor
 	};
 
 	return (
-		<button className="button" style={buttonStyle} onClick={() => onClick()}>
+		<button className="button" style={buttonStyle} onClick={() => onClick && onClick()}>
 			{props.children}
 		</button>
 	);
 }
-
-export default Button;

@@ -6,7 +6,11 @@ import HomePage from "./home/home-page";
 import StagePage from "./stage/stage-page";
 import { Navbar } from "../components/navbar/navbar";
 
-const Router = (props) => {
+type RouterProps = {
+	children: JSX.Element;
+}
+
+const Router = (props: RouterProps) => {
 	return (
 		<BrowserRouter>
 			{props.children}

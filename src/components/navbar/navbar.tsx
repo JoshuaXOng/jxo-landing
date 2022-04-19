@@ -30,7 +30,7 @@ export function Navbar () {
 			</nav>
 			<nav className={isVertNavbarOpen ? "navbar__popout" : "navbar__popout--hidden"}>
 				<NavbarPopout
-					entries={[{ mainText: "Stage", toLink: "/stage" }]}
+					entries={[]}
 					onEntryClick={onPopoutEntryClick}
 				/>
 			</nav>

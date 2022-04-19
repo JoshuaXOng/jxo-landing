@@ -6,7 +6,7 @@ process.env.NODE_ENV;
 module.exports = {
   mode: "production",
   entry: {
-    index: "./src/pages/index.js"
+    index: "./src/pages/index.tsx"
   },
   // devtool: "source-map",
   output: {
@@ -20,6 +20,11 @@ module.exports = {
         test: /\.(js)$/, 
         use: "babel-loader" 
       },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       { 
         test: /\.css$/, 
         use: ["style-loader", "css-loader"] 
@@ -30,7 +35,7 @@ module.exports = {
         loader: "ts-loader"
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(jpe?g|png|gif)$/i,
         use: [
           {
             loader: "file-loader",

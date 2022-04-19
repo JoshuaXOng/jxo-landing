@@ -25,6 +25,6 @@ body, #root {
 
 hr {
     border-color: var(--grey-100);
-    margin: 0rem 1.7rem 0rem 1.7rem;
+    margin: 3rem 15rem 3rem 15rem;
     filter: opacity(0.5);
 }
