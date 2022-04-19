@@ -1,5 +1,3 @@
-"use strict";
-
 import React, { useRef } from "react";
 import "./inf_scroll_decorator.css";
 

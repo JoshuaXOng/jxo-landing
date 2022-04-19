@@ -1,5 +1,3 @@
-"use strict";
-
 import React from "react";
 import "./form.css";
 import ReminderForm from "../reminder_form/reminder_form";

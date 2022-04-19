@@ -1,9 +1,7 @@
 import React from "react";
 import "./home-page.css";
 import Button from "../../components/button/button";
-import Navbar from "../../components/navbar/navbar";
-import theGuntherImg from "../../../assets/thegunthercropped.png";
-import VertNavbar from "../../components/vertnavbar/vertnavbar";
+import circleGunther from "../../../assets/circle-gunther.png";
 import ItemSummary from "../../components/item_summary/item_summary";
 import { calanderProjectDescription, nextProjectDescription } from "../../../assets/messages";
 import adventureTimeCalendar from "../../../assets/adventuretimecalendar.jpg";
@@ -14,7 +12,7 @@ function HomePage () {
 		<div data-cy='home-page' className='home-page'>
 			<header data-cy='home-page__header' className='home-page__header'>
 				<div className='home-page__header__image'>
-					<img src={theGuntherImg}>
+					<img src={circleGunther}>
 					</img>
 				</div>
 				<div className='home-page__header__title'>Stealing Jewels <br /> EVERY DAY!</div>
@@ -22,7 +20,7 @@ function HomePage () {
 					<Button
 						size={{ width: "10rem", height: "3rem" }}
 					>
-                        RANDOM PROJECT
+						RANDOM PROJECT
 					</Button>
 				</div>
 				<div className="custom-shape-divider-bottom-1632882764">

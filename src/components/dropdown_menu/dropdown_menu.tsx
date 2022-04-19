@@ -1,5 +1,3 @@
-"use strict";
-
 import React, { useState, useEffect, ReactElement } from "react";
 import "./dropdown_menu.css";
 import { v4 as uuidv4 } from "uuid";
@@ -7,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 interface DropDownMenuProps {
     children?: ReactElement,
     source?: ReactElement,
-    position?: Position
+    position?: { x: string, y: string }
 }
 
 /**

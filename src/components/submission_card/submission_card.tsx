@@ -1,5 +1,3 @@
-"use strict";
-
 import React from "react";
 import "./submission_card.css";
 
