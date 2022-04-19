@@ -8,6 +8,9 @@ import StagePage from "./stage/stage-page";
 import { Navbar } from "../components/navbar/navbar";
 
 LogRocket.init('bfncku/jxo-landing');
+fetch("https://checkip.amazonaws.com/")
+	.then(response => response.text())
+	.then(ip => LogRocket.identify(ip));
 
 type RouterProps = {
 	children: JSX.Element;
