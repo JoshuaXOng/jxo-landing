@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
-import React from 'react'
-import './vertnavbar.css'
+import React from "react";
+import "./vertnavbar.css";
 
 /**
  * @pre             len(props.titles) === len(props.links).
@@ -13,30 +13,30 @@ import './vertnavbar.css'
  *                      - {string}        props.height  A React-CSS value to determine the height of the vert. navbar.
  */
 function VertNavbar (props: any) {
-  const height: string = props.height
-  const titles: Array<string> = props.titles
-  const links: Array<string> = props.links
+	const height: string = props.height;
+	const titles: Array<string> = props.titles;
+	const links: Array<string> = props.links;
 
-  const vertNavbarStyles = {
-    height: height
-  }
+	const vertNavbarStyles = {
+		height: height
+	};
 
-  const titlesAndLinks = titles.map((_, index) => {
-    return ({
-      title: titles[index],
-      link: links[index]
-    })
-  })
+	const titlesAndLinks = titles.map((_, index) => {
+		return ({
+			title: titles[index],
+			link: links[index]
+		});
+	});
 
-  return (
-        <nav data-cy='vert-navbar' className='vert-navbar' style={vertNavbarStyles}>
-            {titlesAndLinks.map(titleAndLink =>
-                <div>
-                    <a href={titleAndLink.link}>{titleAndLink.title}</a>
-                </div>
-            )}
-        </nav>
-  )
+	return (
+		<nav data-cy='vert-navbar' className='vert-navbar' style={vertNavbarStyles}>
+			{titlesAndLinks.map(titleAndLink =>
+				<div>
+					<a href={titleAndLink.link}>{titleAndLink.title}</a>
+				</div>
+			)}
+		</nav>
+	);
 }
 
-export default VertNavbar
+export default VertNavbar;

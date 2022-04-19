@@ -1,5 +1,5 @@
-import React from 'react'
-import './navbar.css'
+import React from "react";
+import "./navbar.css";
 
 /**
  * @param {*} props The default React props object, in addition:
@@ -7,11 +7,11 @@ import './navbar.css'
  *                      - {string} props.bColor The color of the navbar; should be a valid css value.
  */
 function Navbar (props) {
-  return (
-        <nav className="navbar">
-            {props.children}
-        </nav>
-  )
+	return (
+		<nav className="navbar">
+			{props.children}
+		</nav>
+	);
 }
 
-export default Navbar
+export default Navbar;

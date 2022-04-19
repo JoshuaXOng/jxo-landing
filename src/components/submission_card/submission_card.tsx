@@ -1,7 +1,7 @@
-'use strict'
+"use strict";
 
-import React from 'react'
-import './submission_card.css'
+import React from "react";
+import "./submission_card.css";
 
 /**
  * A React component: a card that displays an image, text and buttons.
@@ -18,20 +18,20 @@ function SubmissionCard ({ image, title, info, controls }: {
         title: string, info: string,
         controls: any
     }) {
-  return (
-        <div className='jxo__card'>
-            <div className='jxo__card__image-container'>
-                {image}
-            </div>
-            <div className='jxo__card__main-container'>
-                <div className='jxo__card__main-container__title'>{title}</div>
-                <div>{info}</div>
-            </div>
-            <div className='jxo__card__controls-container'>
-                {controls}
-            </div>
-        </div>
-  )
+	return (
+		<div className='jxo__card'>
+			<div className='jxo__card__image-container'>
+				{image}
+			</div>
+			<div className='jxo__card__main-container'>
+				<div className='jxo__card__main-container__title'>{title}</div>
+				<div>{info}</div>
+			</div>
+			<div className='jxo__card__controls-container'>
+				{controls}
+			</div>
+		</div>
+	);
 }
 
-export default SubmissionCard
+export default SubmissionCard;
