@@ -1,3 +1,4 @@
+import LogRocket from 'logrocket';
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -5,6 +6,8 @@ import "./index.css";
 import HomePage from "./home/home-page";
 import StagePage from "./stage/stage-page";
 import { Navbar } from "../components/navbar/navbar";
+
+LogRocket.init('bfncku/jxo-landing');
 
 type RouterProps = {
 	children: JSX.Element;
