@@ -9,8 +9,8 @@ import { Navbar } from "../components/navbar/navbar";
 
 LogRocket.init('bfncku/jxo-landing');
 fetch("https://www.cloudflare.com/cdn-cgi/trace")
-	.then(response => response.json())
-	.then(data => LogRocket.identify(data.ip))
+	.then(response => response.text())
+	.then(data => LogRocket.identify(data.match(/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/)[0]))
 	.catch(error => console.log(error));
 
 type RouterProps = {
