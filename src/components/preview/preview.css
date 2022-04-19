@@ -1,4 +1,4 @@
-.jxo-preview-container {
+.preview-container {
     display: flex;
     gap: 0.2rem;
     align-items: center;
@@ -9,7 +9,7 @@
 }
 
 /* @media only screen and (max-width: 600px) {
-    .jxo-preview-container {
+    .preview-container {
         display: none;
         align-items: center;
         width: 80%;
@@ -18,7 +18,7 @@
     }
 } */
 
-.jxo-preview {
+.preview {
     transition: width 0.4s;
     transition-timing-function: ease;
     width: 50%;
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .jxo-preview:nth-child(-n+2) {
+    .preview:nth-child(-n+2) {
         transition: width 0.4s;
         transition-timing-function: ease;
         width: 0rem;

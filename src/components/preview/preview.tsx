@@ -1,29 +1,24 @@
 import React from "react";
 import "./preview.css";
 
-/**
- * A React component, representing a JXO preview tile.
- */
-function Preview ({ children }) {
+export default function Preview () {
 	return (
-		<div className="jxo-preview-container">
+		<div className="preview-container">
 			<img
-				className="jxo-preview"
+				className="preview"
 				src="https://avatars.githubusercontent.com/u/63457760?s=60&v=4"
 			>
 			</img>
 			<img
-				className="jxo-preview"
+				className="preview"
 				src="https://avatars.githubusercontent.com/u/63457760?s=60&v=4"
 			>
 			</img>
 			<img
-				className="jxo-preview"
+				className="preview"
 				src="https://avatars.githubusercontent.com/u/63457760?s=60&v=4"
 			>
 			</img>
 		</div>
 	);
 }
-
-export default Preview;

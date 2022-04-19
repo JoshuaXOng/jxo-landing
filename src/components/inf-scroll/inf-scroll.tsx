@@ -1,13 +1,12 @@
 import React, { useRef } from "react";
-import "./inf_scroll_decorator.css";
+import "./inf-scroll.css";
 
-function InfScrollDecorator (props: any) {
+export default function InfScrollDecorator (props: any) {
 	const onAtTopBounds = props.onAtTopBounds;
 	const onAtBotBounds = props.onAtBotBounds;
 
 	const scrollContainer = useRef(null);
 
-	// For some reason (that may be obvious) decorators are not working.
 	let isBeingProcessed = false;
 	function processing (func: CallableFunction) {
 		isBeingProcessed = true;
@@ -27,7 +26,7 @@ function InfScrollDecorator (props: any) {
 	};
 
 	return (
-		<div className='inf-scroll-decorator' ref={scrollContainer}
+		<div className='inf-scroll' ref={scrollContainer}
 			onScrollCapture={() => handleScrollAndWheel()}
 			onWheelCapture={() => handleScrollAndWheel()}
 		>
@@ -35,5 +34,3 @@ function InfScrollDecorator (props: any) {
 		</div>
 	);
 }
-
-export default InfScrollDecorator;

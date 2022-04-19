@@ -1,4 +1,4 @@
-.inf-scroll-decorator {
+.inf-scroll {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,6 +7,6 @@
     overflow-y: scroll;
 }
 
-.inf-scroll-decorator::-webkit-scrollbar {
+.inf-scroll::-webkit-scrollbar {
     display: none;
 }

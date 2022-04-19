@@ -1,4 +1,4 @@
-.jxo__card {
+.submission-card {
     display: grid;
     grid-template-areas:
         'I'
@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 
-.jxo__card:before {
+.submission-card:before {
     content: '';
     z-index: 1000;
     position: absolute;
@@ -39,14 +39,14 @@
         rgba(255,255,255,1);
 }
 
-.jxo__card__image-container {
+.submission-card__image-container {
     grid-area: I;
     z-index: 0;
     position: relative;
     overflow: hidden;
 }
 
-.jxo__card__main-container {
+.submission-card__main-container {
     grid-area: M;
     display: flex;
     flex-direction: column;
@@ -57,17 +57,17 @@
     padding: 1rem 0rem 1rem 0rem;
 }
 
-.jxo__card__main-container__title {
+.submission-card__main-container__title {
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-.jxo__card__controls-container {
+.submission-card__controls-container {
     grid-area: C;
 }
 
 /* @media screen and (min-width: 992px) {
-    .jxo__card {
+    .submission-card {
         grid-template-areas: 
             'I M B';
         align-items: center;
