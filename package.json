@@ -30,6 +30,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.4",
+    "react-ga": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "ts-node": "^10.4.0",
     "uuid": "^8.3.2",
